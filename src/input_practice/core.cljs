@@ -46,8 +46,10 @@
                  :justify-content "center"}}
 
    (for [num (take 500 (range))]
-     ^{:key num} [:div {:style {:padding "0.25em" :display "flex" :justify-content "center"}}
-                  [:input {:type (get-input-type) :style {}}]])])
+     ^{:key num} [:div {:style {:padding "0.25em"
+                                :display "flex"
+                                :justify-content "center"}}
+                  [:input {:type (get-input-type)}]])])
 
 ;; -------------------------
 ;; Initialize app
